@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": false,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": false,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "lib": [
+      "es2015"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "/**/*.spec.ts",
+    "./src/__mocks__/*.ts"
+  ],
+  "include": [
+    "./types/**/*",
+    "./src/**/*"
+  ],
+  "awesomeTypescriptLoaderOptions": {
+    "reportFiles": [
+      "./src/**/*"
+    ]
+  }
+}

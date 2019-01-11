@@ -1,0 +1,65 @@
+{
+  "name": "serverless-stack-output-plugin",
+  "version": "1.0.0",
+  "description": "Serverless stack output",
+  "main": "dist/index.js",
+  "typings": "dist/index",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeadsOnDemand/serverless-stack-output-plugin.git"
+  },
+  "author": {
+    "name": "Robin Schultz",
+    "url": "https://github.com/anigenero"
+  },
+  "keywords": [
+    "serverless",
+    "aws",
+    "cloudformation"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeadsOnDemand/serverless-stack-output-plugin/issues"
+  },
+  "homepage": "https://github.com/LeadsOnDemand/serverless-stack-output-plugin#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "@types/lodash": "^4.14.119",
+    "@types/node": "^10.12.18",
+    "jest": "^23.6.0",
+    "jest-cli": "^23.6.0",
+    "serverless": "^1.36.0",
+    "ts-jest": "^23.10.5",
+    "tslint": "^5.12.1",
+    "tslint-sonarts": "^1.8.0",
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "assert": "^1.4.1",
+    "lodash": "^4.17.11"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "js"
+    ],
+    "setupFiles": [
+      "<rootDir>/jest.setup.js"
+    ],
+    "collectCoverage": true,
+    "coveragePathIgnorePatterns": [
+      "/dist/",
+      "/node_modules/"
+    ],
+    "testMatch": [
+      "**/__tests__/*.spec.(t|j)s"
+    ],
+    "transform": {
+      "^.+\\.(t|j)s?": "ts-jest"
+    }
+  }
+}

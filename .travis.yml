@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '10'
+script:
+  - npm run lint
+  - npm test
+  - npm run build
+deploy:
+  skip_cleanup: true
+  on:
+    tags: true
+  provider: npm
+  email: robin.schultz@leadsondemandinc.com
+  api_key:
+    secure: QvIA5PEJ09hleOb9KVZ5WMGMKXMtsmwdL0j6YQwqJYgrauZGfTD97xbxqnHBtcxq9mtCck4MC2iOzoRFIJIFA00KIPLv1pHMjlZz2p6t+qqN3fkRgtBg/pbooT6DdXbjHzseY765JXT1PkfeO2AtZ9veJlA7ZuQg9V3NC0EWv3sdj5S1ceaAvNu5e4TIVRKaHzHw4R3fXb5dckZ7B/SC6Nq26NzPJbw41Zn7AeR+oQH2hviw8F2I0SW8GxHSO/Gw0tmO0OtHrS8qg9NgKxyBO+tx+qCP7Aw/ksniu+RhVmPKeur1kH3Stj3DXD5XwfAzRK4X03lqeQXIjYBkO8e93oxCWDEN6FygzX0jJFieJgFGEUX5jR0WMVvZ6ipcD6k8OMn5yglgyJ1XnBWjN2212DNp8FtCqnNNKJKOzZgGlWZFITFbgpYDnZCFttDBWHpmsC9hFj43ausfifNSJHv3SbkJ4qG7fC9gWvtvutvhmg6e/MpvgZzDwGS/TN+hYWGbWawQGeZGpXBn0w8MUwf0nfNTWxZgrejANxuK+/WEt5F6yz85Oi3CZYFw0kDFfIivat6VLESrf380w9OoQs7I2BrpnTCRPeWnf0SZ5ghrmOdbacNrW03+xunNJ0SlwMIkHnpQpXz+3ZKYeaxVXqUY/X1by/kWZhksX4yP627gqJc=
